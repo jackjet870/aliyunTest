@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED8F4167-653C-42EC-9307-A13C0301E509}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>aliyunTest.Framework</RootNamespace>
+    <AssemblyName>aliyunTest.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=4.0.2.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseController\ControllerBase.cs" />
+    <Compile Include="Common\AuthorHelper.cs" />
+    <Compile Include="Common\Image.cs" />
+    <Compile Include="Common\IPAddress.cs" />
+    <Compile Include="Common\MsgHelper.cs" />
+    <Compile Include="Common\VerifyCode.cs" />
+    <Compile Include="Config\ConfigBase.cs" />
+    <Compile Include="Config\FrameworkConfig.cs" />
+    <Compile Include="Database\DBMapAttr\DBColumnAttribute.cs" />
+    <Compile Include="Database\DBMapAttr\DBPrimaryKeyAttribute.cs" />
+    <Compile Include="Database\DBMapAttr\DBTableAttribute.cs" />
+    <Compile Include="Database\DBMap\DBColumn.cs" />
+    <Compile Include="Database\DBMap\DBPrimaryKey.cs" />
+    <Compile Include="Database\DBMap\DBTable.cs" />
+    <Compile Include="Database\DBMap\MapHelper.cs" />
+    <Compile Include="Database\DBSession\DBSession.AdoNET.cs" />
+    <Compile Include="Database\DBSession\DBSession.cs" />
+    <Compile Include="Database\DBSession\DBSession.Helper.cs" />
+    <Compile Include="Database\DBSession\DBSession.NonQuery.cs" />
+    <Compile Include="Database\DBSession\DBSession.Reader.cs" />
+    <Compile Include="Database\DBSession\Pager.cs" />
+    <Compile Include="Database\FullData\DegFullData.cs" />
+    <Compile Include="Database\FullData\FullDataHelper.cs" />
+    <Compile Include="Database\FullData\FullDataReader.cs" />
+    <Compile Include="Database\FullData\ObjectHelper.cs" />
+    <Compile Include="Database\Provider\MySQL.cs" />
+    <Compile Include="Database\Provider\Oracle.cs" />
+    <Compile Include="Database\Provider\SQLite.cs" />
+    <Compile Include="Database\Provider\SQLServer.cs" />
+    <Compile Include="Database\Utils\DBContext.cs" />
+    <Compile Include="Database\Utils\EnumType.cs" />
+    <Compile Include="Database\Utils\MyDBException.cs" />
+    <Compile Include="Extensions\DataTableExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DecimalExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\FileUploadExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Filter\ActionFactory.cs" />
+    <Compile Include="Filter\ActionInfoAttribute.cs" />
+    <Compile Include="Filter\ControllerInfoAttribute.cs" />
+    <Compile Include="Filter\RemoveServerHeader.cs" />
+    <Compile Include="Message\Email.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

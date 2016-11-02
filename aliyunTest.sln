@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aliyunTest", "aliyunTest\aliyunTest.csproj", "{7E0ED742-6C58-4FFA-9197-FAF076787BD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aliyunTest.Entity", "aliyunTest.Entity\aliyunTest.Entity.csproj", "{F134D3D4-1674-402C-B4EB-C206EFFA2E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aliyunTest.Entity.Helper", "aliyunTest.Entity.Helper\aliyunTest.Entity.Helper.csproj", "{9B8BD5D3-3A53-4EB5-AB3F-763DCCC47085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aliyunTest.Framework", "aliyunTest.Framework\aliyunTest.Framework.csproj", "{ED8F4167-653C-42EC-9307-A13C0301E509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E0ED742-6C58-4FFA-9197-FAF076787BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0ED742-6C58-4FFA-9197-FAF076787BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0ED742-6C58-4FFA-9197-FAF076787BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0ED742-6C58-4FFA-9197-FAF076787BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F134D3D4-1674-402C-B4EB-C206EFFA2E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F134D3D4-1674-402C-B4EB-C206EFFA2E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F134D3D4-1674-402C-B4EB-C206EFFA2E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F134D3D4-1674-402C-B4EB-C206EFFA2E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8BD5D3-3A53-4EB5-AB3F-763DCCC47085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8BD5D3-3A53-4EB5-AB3F-763DCCC47085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8BD5D3-3A53-4EB5-AB3F-763DCCC47085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8BD5D3-3A53-4EB5-AB3F-763DCCC47085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED8F4167-653C-42EC-9307-A13C0301E509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8F4167-653C-42EC-9307-A13C0301E509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8F4167-653C-42EC-9307-A13C0301E509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8F4167-653C-42EC-9307-A13C0301E509}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal
